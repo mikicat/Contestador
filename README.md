@@ -1,2 +1,3 @@
-# contestador
-Contestador per quan estas avorrit. En català
+# Contestador
+Contestador per quan estas avorrit. En català.
+Funciona amb Python 3.4
