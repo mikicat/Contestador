@@ -46,7 +46,7 @@ def main():
             contra = open('contra.dat', 'rb')
             ldpasswd = pickle.load(contra)
             contra.close()
-            passwd = input("Contrassenya: ")
+            passwd = input("Contrasenya: ")
             if passwd == ldpasswd:
                 ask = input("D.N.I: ")
                 dni = open('dni.dat', 'rb')
