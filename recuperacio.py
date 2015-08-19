@@ -13,8 +13,8 @@ def contra():
     readni = pickle.load(dni)
     dni.close()
     if ask == readni:
-        newpwd = input("Nova Contrassenya: ")
-        repeat = input("Repeteix la Contrassenya: ")
+        newpwd = input("Nova Contrasenya: ")
+        repeat = input("Repeteix la Contrasenya: ")
         if newpwd == repeat:
             contra = open('contra.dat', 'wb')
             pickle.dump(newpwd, contra)
