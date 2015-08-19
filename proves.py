@@ -1,2 +1,2 @@
-from tecnologia import noticies
-noticies()
+from vida import vida_estat
+vida_estat()
