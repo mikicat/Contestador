@@ -1,10 +1,15 @@
 import random
 import time
+import webbrowser
 
 def vida_estat():
     estats = ['Estic be', 'Perfecte!', 'Em sento sol', 'Doncs com que plou estic trist', 'Em trobo malament']
     print(random.choice(estats))
     return True
+
+def temps():
+    print("Doncs mira... Ara ho veuràs!")
+    time.sleep(1.5)
 
 def avui():
     print("Avui es %s" % time.asctime())
