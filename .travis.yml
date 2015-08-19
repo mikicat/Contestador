@@ -2,6 +2,4 @@ language: python
 python:
   - "3.4"
 
-install: "wget https://github.com/mikicat/contestador.git"
-
-script: "python CONFIG.py"
+script: "python proves.py"
