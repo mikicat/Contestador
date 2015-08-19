@@ -60,6 +60,8 @@ def main():
             else:
                 print("Accés Denegat")
                 break
+        elif "temps" in lletres and "avui?" in lletres:
+            temps()
         else:
             respostes_limitades()
             mayus()
