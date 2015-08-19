@@ -10,6 +10,7 @@ def vida_estat():
 def temps():
     print("Doncs mira... Ara ho veuràs!")
     time.sleep(1.5)
+    webbrowser.open("http://www.meteo.cat")
 
 def avui():
     print("Avui es %s" % time.asctime())
