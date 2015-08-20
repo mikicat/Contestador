@@ -21,33 +21,33 @@ def main():
         print("\n")
         print("Benvingut al contestador")
         pregunta = input("Què vols preguntar? ")
-        lletres = pregunta.split()
-        if "estas?" in lletres:
+        paraules = pregunta.split()
+        if "estas?" in paraules:
             vida_estat()
-        elif "com" in lletres and "va" in lletres and "tot?" in lletres:
+        elif "com" in paraules and "va" in paraules and "tot?" in paraules:
             vida_estat()
-        elif "dia" in lletres and "es" in lletres and "avui?" in lletres:
+        elif "dia" in paraules and "es" in paraules and "avui?" in paraules:
             avui()
-        elif "coses" in lletres and "t'agraden" in lletres or "t'agraden?" in lletres:
+        elif "coses" in paraules and "t'agraden" in paraules or "t'agraden?" in paraules:
             gustos()
-        elif "noticies" in lletres or "noticies?" in lletres:
+        elif "noticies" in paraules or "noticies?" in paraules:
             noticies()
-        elif "passa" in lletres and "mon?" in lletres:
+        elif "passa" in paraules and "mon?" in paraules:
             noticies()
-        elif "web" in lletres and "escola?":
+        elif "web" in paraules and "escola?":
             web_escola()
-        elif "teu" in lletres and "nom?" in lletres:
+        elif "teu" in paraules and "nom?" in paraules:
             nom()
-        elif "dius?" in lletres or "dius" in lletres:
+        elif "dius?" in paraules or "dius" in paraules:
             nom()
-        elif "fora" in lletres:
+        elif "fora" in paraules:
             quit()
-        elif "recorda'm" in lletres:
+        elif "recorda'm" in paraules:
             recorda()
             break
-        elif "contacta" in lletres or "contactar" in lletres:
+        elif "contacta" in paraules or "contactar" in paraules:
             form.contacta()
-        elif "mirar" in lletres and "formulari" in lletres:
+        elif "mirar" in paraules and "formulari" in paraules:
             contra = open('contra.dat', 'rb')
             ldpasswd = pickle.load(contra)
             contra.close()
@@ -57,13 +57,13 @@ def main():
             else:
                 print("Accés Denegat")
                 break
-        elif "temps" in lletres and "avui?" in lletres:
+        elif "temps" in paraules and "avui?" in paraules:
             temps()
-        elif "esborra" in lletres and "conversa" in lletres or "esborrar" in lletres and "conversa?" in lletres:
+        elif "esborra" in paraules and "conversa" in paraules or "esborrar" in paraules and "conversa?" in paraules:
             print("\n" * 50)
-        elif "guardar" in lletres and "formulari" in lletres and "desencriptat" in lletres or "desencriptat?" in lletres:
+        elif "guardar" in paraules and "formulari" in paraules and "desencriptat" in paraules or "desencriptat?" in paraules:
             form.formulari_txt()
-        elif "campus" in lletres or "web" in lletres and "estudiants" in lletres:
+        elif "campus" in paraules or "web" in paraules and "estudiants" in paraules:
             web_estudiants()
         else:
             respostes_limitades()
