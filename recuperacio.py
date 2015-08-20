@@ -20,7 +20,7 @@ def contra():
             pickle.dump(newpwd, contra)
             contra.close()
         else:
-            print("Acces Denegat")
+            print("Les contrasenyes no coincideixen.")
     else:
         print("Acces Denegat")
 
