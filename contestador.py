@@ -71,6 +71,8 @@ def main():
             print("\n" * 50)
         elif "guardar" in lletres and "formulari" in lletres and "desencriptat" in lletres or "desencriptat?" in lletres:
             form.formulari_txt()
+        elif "campus" in lletres or "web" in lletres and "estudiants" in lletres:
+            web_estudiants()
         else:
             respostes_limitades()
             mayus()
