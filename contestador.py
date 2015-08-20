@@ -8,12 +8,17 @@ from escola import *
 from vida import *
 from altres import *
 import time
+
+form = formulari()
+
 def mayus():
     print("Important: La primera lletra NO HA DE SER MAJUSCULA")
 mayus()
+
 def main():
     while True:
         time.sleep(1)
+        print("\n")
         print("Benvingut al contestador")
         pregunta = input("Què vols preguntar? ")
         lletres = pregunta.split()
@@ -41,7 +46,7 @@ def main():
             recorda()
             break
         elif "contacta" in lletres or "contactar" in lletres:
-            contacta()
+            form.contacta()
         elif "mirar" in lletres and "formulari" in lletres:
             contra = open('contra.dat', 'rb')
             ldpasswd = pickle.load(contra)
@@ -54,7 +59,7 @@ def main():
                 dni.close()
                 if ask == readni:
                     print("\n" * 50)
-                    mira_formulari()
+                    form.mira_formulari()
                 else:
                     print("Accés Denegat")
             else:
@@ -64,6 +69,8 @@ def main():
             temps()
         elif "esborra" in lletres and "conversa" in lletres or "esborrar" in lletres and "conversa?" in lletres:
             print("\n" * 50)
+        elif "guardar" in lletres and "formulari" in lletres and "desencriptat" in lletres or "desencriptat?" in lletres:
+            form.formulari_txt()
         else:
             respostes_limitades()
             mayus()
