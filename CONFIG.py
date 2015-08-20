@@ -1,5 +1,5 @@
 # Fitxer per utilitzar la primera vegada de totes.
-# Et configura el DNI i la Contrassenya.
+# Et configura la Contrasenya.
 from recuperacio import *
 
 contra()
