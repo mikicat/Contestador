@@ -62,6 +62,8 @@ def main():
                 break
         elif "temps" in lletres and "avui?" in lletres:
             temps()
+        elif "esborra" in lletres and "conversa" in lletres or "esborrar" in lletres and "conversa?" in lletres:
+            print("\n" * 50)
         else:
             respostes_limitades()
             mayus()
