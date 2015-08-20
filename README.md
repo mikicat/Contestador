@@ -5,5 +5,6 @@ La primera vegada que es fa servir s'ha d'utilitzar el fitxer CONFIG.py per defi
 Els fitxers .dat no s'han d'obrir.
 El fitxer principal que hauràs d'obrir per funcionar és el contestador.py. 
 ##L'objectiu del contestador es intentar mantenir una conversa basica (escrita) amb l'usuari.
-De moment te diverses respostes; temps, noticies, estat d'anim, ...
+De moment te diverses respostes; temps, noticies, estat d'anim,... 
 Anira millorant mica en mica.
+### Atencio! De moment s'haura de configurar manualment la web de l'escola i la web d'estudiants, del modul escola.py.
