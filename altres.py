@@ -33,26 +33,33 @@ def recorda():
     pickle.dump(nota, save_file)
     save_file.close()
     read_record()
+class formulari():
+    def mira_formulari(self):
+        load = open('formulari.dat', 'rb')
+        loaded = pickle.load(load)
+        load.close()
+        print(loaded)
 
-def mira_formulari():
-    load = open('formulari.dat', 'rb')
-    loaded = pickle.load(load)
-    load.close()
-    print(loaded)
+    def formulari_txt(self):
+        load = open('formulari.dat', 'rb')
+        loaded = pickle.load(load)
+        load.close()
+        formulari_desencriptat = open('formulari.txt', 'w')
+        formulari_desencriptat.write(loaded)
+        formulari_desencriptat.close()
+        print("S'ha guardat el formulari desencriptat en el fitxer 'formulari.txt'")
 
-def contacta():
-    #formulari
-    nom = input("Nom: ")
-    cognom = input("Cognom(s): ")
-    email = input("Email: ")
-    comentari = input("Comentari: ")
-    dades = {'Nom' : nom,
-    'Cognom' : cognom,
-    'Email' : email,
-    'Comentari' : comentari,
-    }
-    save = open('formulari.dat', 'wb')
-    pickle.dump(dades, save)
-    save.close()
-
-
+    def contacta(self):
+        #formulari
+        nom = input("Nom: ")
+        cognom = input("Cognom(s): ")
+        email = input("Email: ")
+        comentari = input("Comentari: ")
+        dades = {'Nom' : nom,
+        'Cognom' : cognom,
+        'Email' : email,
+        'Comentari' : comentari,
+        }
+        save = open('formulari.dat', 'wb')
+        pickle.dump(dades, save)
+        save.close()
