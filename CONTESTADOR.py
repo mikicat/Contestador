@@ -53,15 +53,7 @@ def main():
             contra.close()
             passwd = input("Contrasenya: ")
             if passwd == ldpasswd:
-                ask = input("D.N.I: ")
-                dni = open('dni.dat', 'rb')
-                readni = pickle.load(dni)
-                dni.close()
-                if ask == readni:
-                    print("\n" * 50)
-                    form.mira_formulari()
-                else:
-                    print("Accés Denegat")
+                form.mira_formulari()
             else:
                 print("Accés Denegat")
                 break
