@@ -2,4 +2,4 @@
 # Et configura el DNI i la Contrassenya.
 from recuperacio import *
 
-dni()
+contra()
