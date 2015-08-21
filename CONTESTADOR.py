@@ -12,6 +12,11 @@ import time
 form = formulari()
 
 def mayus():
+    print("______   ______   __   __   ______   ______   ______   ______  ______  ____     ______   ______")
+    print("||       ||   |   ||\  ||     ||     ||       ||___      ||    ||   |  ||  \    ||   |   ||___|")
+    print("||       ||   |   || \ ||     ||     ||--         ||     ||    ||---|  ||   |   ||   |   ||  \ ")
+    print("||____   ||___|   ||  \||     ||     ||____   ____||     ||    ||   |  ||__/    ||___|   ||   \ ")
+    print("\n")
     print("Important: La primera lletra NO HA DE SER MAJUSCULA")
 mayus()
 
