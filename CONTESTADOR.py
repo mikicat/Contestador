@@ -11,7 +11,7 @@ import time
 
 form = formulari()
 
-def mayus():
+def lletres_grans()
     print("______   ______   __   __   ______   ______   ______   ______  ______  ____     ______   ______")
     print("||       ||   |   ||\  ||     ||     ||       ||___      ||    ||   |  ||  \    ||   |   ||___|")
     print("||       ||   |   || \ ||     ||     ||--         ||     ||    ||---|  ||   |   ||   |   ||  \ ")
@@ -19,8 +19,10 @@ def mayus():
     print("\n")
     print("                                                                                     by Mikicat")
     print("\n")
+
+def mayus():
     print("Important: La primera lletra NO HA DE SER MAJUSCULA")
-mayus()
+
 
 def main():
     while True:
@@ -75,6 +77,8 @@ def main():
         else:
             respostes_limitades()
             mayus()
+lletres_grans()
+mayus()
 main()
 
 
