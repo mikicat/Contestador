@@ -17,6 +17,8 @@ def mayus():
     print("||       ||   |   || \ ||     ||     ||--         ||     ||    ||---|  ||   |   ||   |   ||  \ ")
     print("||____   ||___|   ||  \||     ||     ||____   ____||     ||    ||   |  ||__/    ||___|   ||   \ ")
     print("\n")
+    print("                                                                                     by Mikicat")
+    print("\n")
     print("Important: La primera lletra NO HA DE SER MAJUSCULA")
 mayus()
 
