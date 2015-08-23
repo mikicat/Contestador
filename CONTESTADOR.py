@@ -22,7 +22,9 @@ def main():
         print("Benvingut al contestador")
         pregunta = input("Què vols preguntar? ")
         paraules = pregunta.split()
-        if "estas?" in paraules:
+        if "hola" in paraules:
+            saluda()
+        elif "estas?" in paraules:
             vida_estat()
         elif "com" in paraules and "va" in paraules and "tot?" in paraules:
             vida_estat()
