@@ -25,3 +25,7 @@ def nom():
     print("Em dic Rootbot.")
     pregunta_nom = input("I tu, com et dius? ")
     print("Encantat de conèixe't, %s" % pregunta_nom)
+
+def casar():
+    tria = ['Si que vull, amor!', 'Crec que nomes et casaries amb uns pocs kiloBytes.', 'No crec que t\'ho permetin fer, aixo...', 'Si, accepto!']
+    print(random.choice(tria))
