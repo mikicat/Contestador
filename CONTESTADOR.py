@@ -67,6 +67,8 @@ def main():
             form.formulari_txt()
         elif "campus" in paraules or "web" in paraules and "estudiants" in paraules:
             web_estudiants()
+        elif "casar" in lletres and "mi" in lletres:
+            casar()
         else:
             respostes_limitades()
             mayus()
