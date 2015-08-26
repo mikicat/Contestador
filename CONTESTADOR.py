@@ -69,6 +69,8 @@ def main():
             web_estudiants()
         elif "casar" in lletres and "mi" in lletres:
             casar()
+        elif "proposta" in lletres and "millorar-te" in lletres:
+            millora()
         else:
             respostes_limitades()
             mayus()
