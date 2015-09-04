@@ -35,19 +35,25 @@ def recorda():
     read_record()
 class formulari():
     def mira_formulari(self):
-        load = open('formulari.dat', 'rb')
-        loaded = pickle.load(load)
-        load.close()
-        print(loaded)
+        try:
+            load = open('formulari.dat', 'rb')
+            loaded = pickle.load(load)
+            load.close()
+            print(loaded)
+        except FileNotFoundError:
+            print('El fitxer formulari.dat no existeix)
 
     def formulari_txt(self):
-        load = open('formulari.dat', 'rb')
-        loaded = pickle.load(load)
-        load.close()
-        formulari_desencriptat = open('formulari.txt', 'w')
-        formulari_desencriptat.write(loaded)
-        formulari_desencriptat.close()
-        print("S'ha guardat el formulari desencriptat en el fitxer 'formulari.txt'")
+        try:
+            load = open('formulari.dat', 'rb')
+            loaded = pickle.load(load)
+            load.close()
+            formulari_desencriptat = open('formulari.txt', 'w')
+            formulari_desencriptat.write(loaded)
+            formulari_desencriptat.close()
+            print("S'ha guardat el formulari desencriptat en el fitxer 'formulari.txt'")
+        except FileNotFoundError:
+            print('El fitxer formulari.txt no existeix')
 
     def contacta(self):
         #formulari
@@ -60,6 +66,9 @@ class formulari():
         'Email' : email,
         'Comentari' : comentari,
         }
-        save = open('formulari.dat', 'wb')
-        pickle.dump(dades, save)
-        save.close()
+        try:
+            save = open('formulari.dat', 'wb')
+            pickle.dump(dades, save)
+            save.close()
+        except FileNotFoundError:
+            print('El fitxer formulari.dat no existeix')
